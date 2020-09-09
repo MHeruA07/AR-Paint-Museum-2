@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="pmarker_20" size="2.000000 1.998793" />
+    <ImageTarget name="pmarker_19" size="2.000000 2.000000" />
+    <ImageTarget name="pmarker_18" size="2.000000 2.000000" />
+    <ImageTarget name="pmarker_17" size="2.000000 2.000000" />
+    <ImageTarget name="pmarker_16" size="2.000000 2.000000" />
+    <ImageTarget name="pmarker_15" size="2.000000 2.000000" />
+    <ImageTarget name="pmarker_14" size="2.000000 2.000000" />
+    <ImageTarget name="pmarker_13" size="2.000000 2.000000" />
+    <ImageTarget name="pmarker_12" size="2.000000 2.000000" />
+    <ImageTarget name="pmarker_11" size="2.000000 2.000000" />
+    <ImageTarget name="pmarker_10" size="2.000000 2.000000" />
+    <ImageTarget name="pmarker_9" size="2.000000 2.000000" />
+    <ImageTarget name="pmarker_8" size="2.000000 2.000000" />
+    <ImageTarget name="pmarker_7" size="2.000000 2.000000" />
+    <ImageTarget name="pmarker_6" size="2.000000 2.000000" />
+    <ImageTarget name="pmarker_5" size="2.000000 2.000000" />
+    <ImageTarget name="pmarker_4" size="2.000000 2.000000" />
+    <ImageTarget name="pmarker_3" size="2.000000 2.000000" />
+    <ImageTarget name="pmarker_2" size="2.000000 2.000000" />
+    <ImageTarget name="pmarker_1" size="2.000000 2.000000" />
+  </Tracking>
+</QCARConfig>
