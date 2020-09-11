@@ -23,11 +23,11 @@ public class TargetImageTracker : MonoBehaviour, ITrackableEventHandler
     public int id;
     public int artId = 0;
     public int artCount;
-    public bool isTracked;
     public Sprite bioPhoto;
     [TextArea]
     public string bioText;
     public Sprite[] buttonIcon;
+    public Sprite[] paintList;
 
     #region UNITY_MONOBEHAVIOUR_METHODS
 
@@ -89,9 +89,10 @@ public class TargetImageTracker : MonoBehaviour, ITrackableEventHandler
 
     private void OnTrackingFound()
     {
-        isTracked = true;
         ArtPreviewHandler.instance.idMarker = id;
-        this.gameObject.transform.Find("3d paint frame").transform.localScale = new Vector3(0.2f,0.2f,0.2f);
+        this.gameObject.transform.Find("3d frame").transform.localPosition = new Vector3(0,0,0);
+        this.gameObject.transform.Find("3d frame").transform.localRotation = Quaternion.Euler(0,-90,-90);
+        this.gameObject.transform.Find("3d frame").transform.localScale = new Vector3(0.4f,0.4f,0.4f);
         ArtPreviewHandler.instance.ChangeArtPreview(artId);
         ArtPreviewHandler.instance.SetArtListPreview(artCount, buttonIcon);
         ArtPreviewHandler.instance.ShowArtPreviewPanel();
@@ -103,7 +104,6 @@ public class TargetImageTracker : MonoBehaviour, ITrackableEventHandler
 
     private void OnTrackingLost()
     {
-        isTracked = false;
         ArtPreviewHandler.instance.idMarker = 0;
         ArtPreviewHandler.instance.HideArtPreviewPanel();
         ArtPreviewHandler.instance.HideBioButton();
