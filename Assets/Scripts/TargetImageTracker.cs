@@ -90,12 +90,13 @@ public class TargetImageTracker : MonoBehaviour, ITrackableEventHandler
     private void OnTrackingFound()
     {
         ArtPreviewHandler.instance.idMarker = id;
+        this.gameObject.transform.Find("3d frame").gameObject.SetActive(true);
         this.gameObject.transform.Find("3d frame").transform.localPosition = new Vector3(0,0,0);
         this.gameObject.transform.Find("3d frame").transform.localRotation = Quaternion.Euler(0,-90,-90);
         this.gameObject.transform.Find("3d frame").transform.localScale = new Vector3(0.4f,0.4f,0.4f);
         ArtPreviewHandler.instance.ChangeArtPreview(artId);
-        ArtPreviewHandler.instance.SetArtListPreview(artCount, buttonIcon);
         ArtPreviewHandler.instance.ShowArtPreviewPanel();
+        ArtPreviewHandler.instance.SetArtListPreview(artCount, buttonIcon);
         ArtPreviewHandler.instance.ShowBioButton();
         ArtPreviewHandler.instance.bioPhoto.sprite = bioPhoto;
         ArtPreviewHandler.instance.bioText.text = bioText;
@@ -104,9 +105,10 @@ public class TargetImageTracker : MonoBehaviour, ITrackableEventHandler
 
     private void OnTrackingLost()
     {
-        ArtPreviewHandler.instance.idMarker = 0;
+        ArtPreviewHandler.instance.HideFrame();
         ArtPreviewHandler.instance.HideArtPreviewPanel();
         ArtPreviewHandler.instance.HideBioButton();
+        ArtPreviewHandler.instance.idMarker = 0;
     }
 
     #endregion // PROTECTED_METHODS

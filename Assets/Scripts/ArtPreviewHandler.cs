@@ -75,7 +75,7 @@ public class ArtPreviewHandler : MonoBehaviour
     }
 
     public void SetArtListPreview(int count, Sprite[] icon){
-        for(int x=0; x<12; x++){
+        for(int x=0; x<14; x++){
             if(x<count){
                 scrollViewContent.transform.GetChild(x).GetComponent<Image>().sprite = icon[x];
                 scrollViewContent.transform.GetChild(x).gameObject.SetActive(true);
@@ -154,8 +154,13 @@ public class ArtPreviewHandler : MonoBehaviour
             paintFrame.transform.localPosition = new Vector3(0,0,0);
             paintFrame.transform.localRotation = Quaternion.Euler(0,-90,-90);
             paintFrame.transform.localScale = new Vector3(0.4f,0.4f,0.4f);
+            paintFrame.SetActive(false);
             paintFrame = null;
         }
+    }
+
+    public void HideFrame(){
+         GameObject.Find(dumbObjectName).transform.Find("3d frame").gameObject.SetActive(false);
     }
 
     public void ExitApp(){
