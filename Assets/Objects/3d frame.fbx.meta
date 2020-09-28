@@ -13,6 +13,7 @@ ModelImporter:
     100014: Paint Frame.101
     100016: Paint Frame.102
     100018: Paint Frame.103
+    100020: Paint Frame.201
     400000: //RootNode
     400002: Camera
     400004: Light
@@ -23,6 +24,7 @@ ModelImporter:
     400014: Paint Frame.101
     400016: Paint Frame.102
     400018: Paint Frame.103
+    400020: Paint Frame.201
     2000000: Camera
     2100000: Material
     2300000: Paint Frame
@@ -32,6 +34,7 @@ ModelImporter:
     2300008: Paint Frame.101
     2300010: Paint Frame.102
     2300012: Paint Frame.103
+    2300014: Paint Frame.201
     3300000: Paint Frame
     3300002: Paint Frame.001
     3300004: Paint Frame.002
@@ -39,6 +42,7 @@ ModelImporter:
     3300008: Paint Frame.101
     3300010: Paint Frame.102
     3300012: Paint Frame.103
+    3300014: Paint Frame.201
     4300000: Paint Frame
     4300002: Paint Frame.001
     4300004: Paint Frame.002
@@ -46,6 +50,7 @@ ModelImporter:
     4300008: Paint Frame.101
     4300010: Paint Frame.102
     4300012: Paint Frame.103
+    4300014: Paint Frame.201
     10800000: Light
   externalObjects: {}
   materials:

@@ -96,6 +96,7 @@ public class ArtPreviewHandler : MonoBehaviour
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.101").gameObject.SetActive(false);
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.102").gameObject.SetActive(false);
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.103").gameObject.SetActive(false);
+            GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.201").gameObject.SetActive(false);
         }else if(spriteName.Contains("lf1")){
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.001").gameObject.SetActive(false);
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.002").gameObject.SetActive(true);
@@ -103,6 +104,7 @@ public class ArtPreviewHandler : MonoBehaviour
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.101").gameObject.SetActive(false);
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.102").gameObject.SetActive(false);
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.103").gameObject.SetActive(false);
+            GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.201").gameObject.SetActive(false);
         }else if(spriteName.Contains("rf1")){
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.001").gameObject.SetActive(false);
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.002").gameObject.SetActive(false);
@@ -110,6 +112,7 @@ public class ArtPreviewHandler : MonoBehaviour
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.101").gameObject.SetActive(false);
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.102").gameObject.SetActive(false);
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.103").gameObject.SetActive(false);
+            GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.201").gameObject.SetActive(false);
         }else if(spriteName.Contains("pf2")){
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.001").gameObject.SetActive(false);
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.002").gameObject.SetActive(false);
@@ -117,6 +120,7 @@ public class ArtPreviewHandler : MonoBehaviour
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.101").gameObject.SetActive(true);
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.102").gameObject.SetActive(false);
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.103").gameObject.SetActive(false);
+            GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.201").gameObject.SetActive(false);
         }else if(spriteName.Contains("lf2")){
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.001").gameObject.SetActive(false);
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.002").gameObject.SetActive(false);
@@ -124,6 +128,7 @@ public class ArtPreviewHandler : MonoBehaviour
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.101").gameObject.SetActive(false);
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.102").gameObject.SetActive(true);
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.103").gameObject.SetActive(false);
+            GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.201").gameObject.SetActive(false);
         }else if(spriteName.Contains("rf2")){
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.001").gameObject.SetActive(false);
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.002").gameObject.SetActive(false);
@@ -131,6 +136,15 @@ public class ArtPreviewHandler : MonoBehaviour
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.101").gameObject.SetActive(false);
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.102").gameObject.SetActive(false);
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.103").gameObject.SetActive(true);
+            GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.201").gameObject.SetActive(false);
+        }else if(spriteName.Contains("lf3")){
+            GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.001").gameObject.SetActive(false);
+            GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.002").gameObject.SetActive(false);
+            GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.003").gameObject.SetActive(false);
+            GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.101").gameObject.SetActive(false);
+            GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.102").gameObject.SetActive(false);
+            GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.103").gameObject.SetActive(false);
+            GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.201").gameObject.SetActive(true);
         }else if(spriteName.Contains("n")){
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.001").gameObject.SetActive(false);
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.002").gameObject.SetActive(false);
@@ -138,6 +152,7 @@ public class ArtPreviewHandler : MonoBehaviour
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.101").gameObject.SetActive(false);
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.102").gameObject.SetActive(false);
             GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.103").gameObject.SetActive(false);
+            GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Frame.201").gameObject.SetActive(false);
         }
 
         GameObject.Find(dumbObjectName).transform.Find("3d frame").transform.Find("Paint Image").GetComponent<SpriteRenderer>().sprite = GameObject.Find(dumbObjectName).GetComponent<TargetImageTracker>().paintList[id];
